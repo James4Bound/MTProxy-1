@@ -131,7 +131,6 @@ exec /bin/mtproto-proxy \
     --aes-pwd "$PROXY_SECRET_FILE" \
     --allow-skip-dh \
     --nat-info "$INTERNAL_IP:$IP" \
-    # $SECRET_CMD \
     $TAG_CMD \
     $ARGS \
     "$PROXY_CONFIG_FILE"
