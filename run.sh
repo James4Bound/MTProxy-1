@@ -126,6 +126,7 @@ exec /bin/mtproto-proxy \
     -p "$INTERNAL_PORT" \
     -H "$PORT" \
     -M "$WORKERS" \
+    -S "76c59bce782e456cc4af380c50ecddae"
     -C 60000 \
     --aes-pwd "$PROXY_SECRET_FILE" \
     --allow-skip-dh \
