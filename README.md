@@ -9,7 +9,7 @@ The Telegram Messenger [MTProto proxy](https://github.com/TelegramMessenger/MTPr
 
 ## The Easiest Way
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/dnsxxx18/MTProxy-1)
 
 ##  🚀 Quick Reference
 
