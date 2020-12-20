@@ -18,7 +18,7 @@ RUN apt-get update && \
 
 COPY --from=0 /MTProxy/objs/bin/mtproto-proxy /bin
 
-EXPOSE 443 65443
+EXPOSE 443 8888
 VOLUME /data
 WORKDIR /data
 ENTRYPOINT /run.sh
