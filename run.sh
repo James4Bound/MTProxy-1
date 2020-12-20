@@ -65,7 +65,7 @@ if [ ! -z "$TAG" ]; then
 fi
 
 # Obtain a secret, used to connect to telegram servers
-PROXY_SECRET_FILE=/data/proxy.secret
+PROXY_SECRET_FILE=proxy-secret
 curl -s https://core.telegram.org/getProxySecret -o $PROXY_SECRET_FILE || {
   echo '[F] Cannot download proxy secret from Telegram servers.'
   exit 2
@@ -73,7 +73,7 @@ curl -s https://core.telegram.org/getProxySecret -o $PROXY_SECRET_FILE || {
 
 # Obtain current telegram configuration
 # It can change (occasionally), so we encourage you to update it once per day
-PROXY_CONFIG_FILE=/data/proxy.conf
+PROXY_CONFIG_FILE=proxy-multi.conf
 curl -s https://core.telegram.org/getProxyConfig -o $PROXY_CONFIG_FILE || {
   echo '[F] Cannot download proxy configuration from Telegram servers.'
   exit 2
