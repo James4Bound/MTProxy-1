@@ -1,6 +1,6 @@
 {
   "name": "MTProxy",
-  "description": "MTProxy. Powered by @ThankTelegram",
+  "description": "MTProxy for HEROKU",
   "keywords": [
     "telegram",
     "best",
@@ -9,9 +9,8 @@
     "heroku",
     "container"
   ],
-  "repository": "https://github.com/SpEcHiDe/MTProxy",
-  "success_url": "https://telegram.dog/ThankTelegram",
-  "website": "https://github.com/SpEcHiDe/MTProxy",
+  "repository": "https://github.com/dnsxxx18/MTProxy-1",
+  "website": "https://github.com/dnsxxx18/MTProxy-1",
   "formation": {
     "worker": {
       "quantity": 1,
