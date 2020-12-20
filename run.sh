@@ -98,7 +98,7 @@ fi
 
 # PORTS
 PORT=${PORT:-"443"}
-INTERNAL_PORT=${INTERNAL_PORT:-"2398"}
+INTERNAL_PORT=${INTERNAL_PORT:-"65443"}
 
 # Report final configuration
 echo
@@ -106,8 +106,8 @@ echo "[*] Final configuration:"
 I=1
 echo "$SECRET" | tr ',' '\n' | while read S; do
   echo "[*]   Secret $I: $S"
-  echo "[*]   tg:// link for secret $I auto configuration: tg://proxy?server=${IP}&port=${PORT}&secret=dd${S}"
-  echo "[*]   t.me link for secret $I: https://t.me/proxy?server=${IP}&port=${PORT}&secret=dd${S}"
+  echo "[*]   tg:// link for secret $I auto configuration: tg://proxy?server=${IP}&port=${PORT}&secret=ee${S}"
+  echo "[*]   t.me link for secret $I: https://t.me/proxy?server=${IP}&port=${PORT}&secret=ee${S}"
   I=$(($I+1))
 done
 
