@@ -5,8 +5,8 @@ RUN apt-get update
 RUN apt-get install -y \
     git curl build-essential libssl-dev zlib1g-dev
 ENV COMMIT=2c942119c4ee340c80922ba11d14fb3b10d5e654
-RUN git clone https://github.com/TelegramMessenger/MTProxy.git
-RUN cd MTProxy && git checkout $COMMIT && make
+RUN git clone https://github.com/TelegramMessenger/MTProxy
+RUN cd MTProxy && git checkout $COMMIT && make && cd objs/bin
 
 # Stage 1: Runtime
 FROM debian:9-slim
@@ -18,7 +18,7 @@ RUN apt-get update && \
 
 COPY --from=0 /MTProxy/objs/bin/mtproto-proxy /bin
 
-EXPOSE 443 2398
+EXPOSE 443 65443
 VOLUME /data
 WORKDIR /data
 ENTRYPOINT /run.sh
